@@ -12,5 +12,5 @@ look_busy::~look_busy()
 
 int look_busy::run(int argc, char** argv)
 {
-	return 0;
+  return 0;
 }
