@@ -37,3 +37,12 @@ analysis
 datums
 beverages
 Java
+object files
+central processing unit
+applications
+file system
+directory trees
+search indexes
+databases
+content management systems
+environment

@@ -16,18 +16,19 @@ flat_list_parser::~flat_list_parser()
 
 const char* flat_list_parser::next()
 {
-  if (in.good())
+  char* c = nullptr;
+  std::string s;
+  
+  while (in.good() && s.empty())
   {
-    std::string s;
     std::getline(in, s);
-    
-    char* c = new char[s.size()];
-    std::strcpy(c, s.c_str());
-    
-    return c;
   }
-  else
+  
+  if (!s.empty())
   {
-    return nullptr;
+    c = new char[s.size()];
+    std::strcpy(c, s.c_str());
   }
+  
+  return c;
 }

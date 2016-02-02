@@ -2,6 +2,7 @@
 #define __LOOK_BUSY_H__
 
 #include "application.h"
+#include "phrase_generator.h"
 
 class look_busy: public application
 {
@@ -21,6 +22,8 @@ public:
    */
   int run(int argc, char** argv);
   
+private:
+  phrase_generator pg;
 };
 
 #endif /* defined(__LOOK_BUSY_H__) */
