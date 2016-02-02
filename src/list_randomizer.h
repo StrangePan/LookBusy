@@ -7,6 +7,7 @@
 class list_randomizer
 {
 public:
+  list_randomizer();
   list_randomizer(const std::vector<std::string>& list);
   ~list_randomizer();
   

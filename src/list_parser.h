@@ -10,7 +10,7 @@ public:
   list_parser(std::istream& in);
   virtual ~list_parser();
   
-  virtual std::string next() = 0;
+  virtual const char* next() = 0;
   
 protected:
   std::istream& in;

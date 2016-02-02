@@ -5,7 +5,8 @@
 
 
 
-SOURCE_FILES = main.cpp look_busy.cpp list_parser.cpp flat_list_parser.cpp list_randomizer.cpp
+SOURCE_FILES = main.cpp look_busy.cpp list_parser.cpp flat_list_parser.cpp \
+list_randomizer.cpp phrase_generator.cpp
 
 CPP_COMPILER = g++
 CPP_LINKER = g++

@@ -2,6 +2,12 @@
 
 #include<algorithm>
 
+list_randomizer::list_randomizer()
+  : list(), curr(0)
+{
+  // Nothing else to do
+}
+
 list_randomizer::list_randomizer(const std::vector<std::string>& list)
   : list(list), curr(0)
 {
