@@ -12,7 +12,8 @@ public:
   ~phrase_generator();
   
   phrase_generator& load_action_strings(std::string filename);
-  phrase_generator& load_target_strings(std::string filename);
+  phrase_generator& load_adjective_strings(std::string filename);
+  phrase_generator& load_noun_strings(std::string filename);
   phrase_generator& load_joke_strings(std::string filename);
   std::string generate_phrase();
   
@@ -20,7 +21,8 @@ private:
   bool load_strings(std::string filename, list_randomizer& randomizer);
   
   list_randomizer actions;
-  list_randomizer targets;
+  list_randomizer adjectives;
+  list_randomizer nouns;
   list_randomizer jokes;
 };
 

@@ -2,12 +2,14 @@
 
 #include "flat_list_parser.h"
 
+#include <cstdlib>
+#include <ctime>
 #include <fstream>
 
 phrase_generator::phrase_generator()
-  : actions(), targets(), jokes()
+  : actions(), adjectives(), nouns(), jokes()
 {
-  // Nothing else to do
+  std::srand(std::time(0));
 }
 
 phrase_generator::~phrase_generator()
@@ -21,9 +23,15 @@ phrase_generator& phrase_generator::load_action_strings(std::string filename)
   return *this;
 }
 
-phrase_generator& phrase_generator::load_target_strings(std::string filename)
+phrase_generator& phrase_generator::load_adjective_strings(std::string filename)
 {
-  load_strings(filename, targets);
+  load_strings(filename, adjectives);
+  return *this;
+}
+
+phrase_generator& phrase_generator::load_noun_strings(std::string filename)
+{
+  load_strings(filename, nouns);
   return *this;
 }
 
@@ -35,7 +43,29 @@ phrase_generator& phrase_generator::load_joke_strings(std::string filename)
 
 std::string phrase_generator::generate_phrase()
 {
-  return "";
+  int r = std::rand();
+  std::string s = "";
+  
+  if (r % 20 == 0)
+  {
+    // 1:20 chance to use an easter egg
+    s = jokes.next();
+  }
+  else
+  {
+    // 19:20 chance to use random arrangement of words
+    s = actions.next();
+    
+    if (std::rand() % 2 == 0)
+    {
+      // 1:2 chance to add an adjective
+      s += " " + adjectives.next();
+    }
+    
+    s += " " + nouns.next();
+  }
+  
+  return s;
 }
 
 bool phrase_generator::load_strings(std::string filename, list_randomizer& randomizer)

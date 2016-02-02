@@ -34,6 +34,7 @@ std::string list_randomizer::next()
 {
   if (list.empty()) return "";
   
-  curr = (curr + 1) % list.size();
-  return list[curr];
+  if (curr >= list.size()) shuffle();
+  
+  return list[curr++];
 }
