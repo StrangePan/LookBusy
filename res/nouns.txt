@@ -1,0 +1,39 @@
+libraries
+drivers
+periphrials
+upgrades
+files
+repositories
+dependencies
+graphics
+materials
+textures
+resources
+videos
+pictures
+editors
+monitors
+buffers
+data points
+artificial inteligence
+polyhedrons
+optimizables
+code
+spaghetti code
+programs
+threads
+processes
+pixels
+voxels
+blocks
+memory
+hard drive
+floppy disk drive
+punch cards
+printer
+random number generator
+entropy
+analysis
+datums
+beverages
+Java
