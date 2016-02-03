@@ -26,7 +26,7 @@ statistical
 critical
 system
 minimal
-overal
+overall
 generic
 designated
 integrated
@@ -41,3 +41,8 @@ non-standard
 cached
 stored
 formatted
+assembling
+disassembling
+distributed
+virtual
+augmented
