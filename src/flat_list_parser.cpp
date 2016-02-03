@@ -1,6 +1,5 @@
 #include "flat_list_parser.h"
 
-#include <cstring>
 #include <iostream>
 
 flat_list_parser::flat_list_parser(std::istream& in)
@@ -14,9 +13,8 @@ flat_list_parser::~flat_list_parser()
   // Nothing else to do
 }
 
-const char* flat_list_parser::next()
+bool flat_list_parser::next(std::string& out)
 {
-  char* c = nullptr;
   std::string s;
   
   while (in.good() && s.empty())
@@ -26,9 +24,11 @@ const char* flat_list_parser::next()
   
   if (!s.empty())
   {
-    c = new char[s.size()];
-    std::strcpy(c, s.c_str());
+    out = s;
+    return true;
   }
-  
-  return c;
+  else
+  {
+    return false;
+  }
 }

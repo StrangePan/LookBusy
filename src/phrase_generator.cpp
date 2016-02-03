@@ -78,12 +78,12 @@ bool phrase_generator::load_strings(std::string filename, list_randomizer& rando
   if (!in.good()) return false;
   
   std::vector<std::string> strings;
+  std::string s;
   flat_list_parser parser(in);
   
-  for (const char* str = parser.next(); str != nullptr; str = parser.next())
+  while (parser.next(s))
   {
-    strings.push_back(std::string(str));
-    delete [] str;
+    strings.push_back(s);
   }
   
   randomizer.set_list_contents(strings);

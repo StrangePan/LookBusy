@@ -9,7 +9,7 @@ public:
   flat_list_parser(std::istream& in);
   ~flat_list_parser();
   
-  const char* next();
+  bool next(std::string& out);
 };
 
 #endif /* defined(__FLAT_LIST_PARSER_H__) */
