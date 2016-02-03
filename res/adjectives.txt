@@ -18,7 +18,6 @@ indexed
 database
 required
 optional
-horrible
 perfected
 parallel
 operating system
@@ -31,3 +30,14 @@ overal
 generic
 designated
 integrated
+hexidecimal
+3-dimensional
+2-dimensional
+undocumented
+low-level
+high-level
+standard
+non-standard
+cached
+stored
+formatted

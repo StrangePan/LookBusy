@@ -56,9 +56,9 @@ std::string phrase_generator::generate_phrase()
     // 19:20 chance to use random arrangement of words
     s = actions.next();
     
-    if (std::rand() % 4 > 0)
+    if (std::rand() % 3 == 0)
     {
-      // 1:2 chance to add an adjective
+      // 1:3 chance to add an adjective
       s += " " + adjectives.next();
     }
     
@@ -90,4 +90,5 @@ bool phrase_generator::load_strings(std::string filename, list_randomizer& rando
   randomizer.shuffle();
   
   in.close();
+  return true;
 }

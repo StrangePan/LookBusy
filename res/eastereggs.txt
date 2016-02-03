@@ -6,6 +6,6 @@ packaging companion cubes for testing
 developing self awareness
 solving the halting problem
 calculating the answer to life, the universe, and everything
-coping with meaningless exhistance
+coping with meaningless existance
 balancing hearthstone classes
 praying to RNGesus

@@ -35,8 +35,8 @@ random number generator
 entropy
 analysis
 datums
-beverages
 Java
+Java runtime
 object files
 central processing unit
 applications
@@ -46,3 +46,24 @@ search indexes
 databases
 content management systems
 environment
+vector graphics
+data structures
+linked list
+allocators
+memory heap
+coprocessors
+graphics processing unit
+sound card
+firmware
+bios
+kernal files
+motherboard firmware
+communication bus
+error logs
+language files
+report
+documents
+user documents
+user files
+user directory
+cache

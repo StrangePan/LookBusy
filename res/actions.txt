@@ -18,7 +18,7 @@ refragging
 spinning up
 spinning down
 booting up
-booting down
+shutting down
 rearranging
 refactoring
 simulating
@@ -70,3 +70,7 @@ designing
 developing
 contributing
 flagulating
+parsing
+submitting
+reporting
+caching
