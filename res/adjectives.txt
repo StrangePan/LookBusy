@@ -41,8 +41,10 @@ non-standard
 cached
 stored
 formatted
-assembling
-disassembling
 distributed
 virtual
 augmented
+binary
+classical
+literary
+multiple

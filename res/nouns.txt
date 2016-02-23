@@ -69,3 +69,7 @@ user directory
 cache
 arduino cluster
 neural network
+seg-fault
+seg-faults
+classes
+turbo-encabulator
