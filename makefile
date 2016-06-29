@@ -10,8 +10,8 @@ list_randomizer.cpp phrase_generator.cpp
 
 CPP_COMPILER = g++
 CPP_LINKER = g++
-CPP_COMPILE_FLAGS = -std=c++11
-CPP_LINK_FLAGS = -std=c++11
+CPP_COMPILE_FLAGS = -std=c++0x
+CPP_LINK_FLAGS = -std=c++0x
 
 # NOTICE build directory must be set in object targets
 

@@ -156,6 +156,15 @@ void look_busy::do_long_task_with_progress_percent()
     cout << '\r' << s << ": " << right << setw(5)
          << (((float) step / (float) steps) * 100) << "%" << flush;
     this_thread::sleep_for(chrono::milliseconds(1000 / 60));
+
+    //Randomly generate hang
+    int hang = rand() % (100 + steps / 5);
+    if( !hang )
+    {
+	//Generate a time for hanging (.25 - 3 seconds)
+	int hang_time = rand() % 3000 + 250;
+	this_thread::sleep_for(chrono::milliseconds(hang_time));
+    }
   }
   
   cout << endl;
