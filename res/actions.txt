@@ -27,13 +27,7 @@ running
 devolving
 generating
 regenerating
-encabulating
 turbo-encabulating
-super-encabulating
-ultra-encabulating
-over-encabulating
-under-encabulating
-circular-encabulating
 evaluating
 womboing
 reverting
@@ -75,3 +69,7 @@ submitting
 reporting
 caching
 populating
+diagnosing
+assembling
+disassembling
+inheriting
